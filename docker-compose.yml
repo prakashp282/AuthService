@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  Auth.AuthService:
+    image: prakashpatel107/authbackend
+    container_name: authbackend
+    build:
+      context: .
+      dockerfile: Auth.AuthService/Dockerfile
+    ports:
+      - 5001:5001
+    env_file:
+      - Auth.AuthService/.env
+  Auth.IdentityServer:
+    image: prakashpatel107/identityserver
+    container_name: identityServer
+    build:
+      context: .
+      dockerfile: Auth.IdentityServer/Dockerfile
+    ports:
+      - 5007:5007
+    env_file:
+      - Auth.IdentityServer/.env
+  Auth.Resource:
+    image: prakashpatel107/resourceservice
+    container_name: resources
+    build:
+      context: .
+      dockerfile: Auth.Resources/Dockerfile
+    ports:
+      - 7001:7001
+    env_file:
+      - Auth.Resources/.env

@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{5AC86840-B62F-4972-8454-DF6E0AF1E8AE}|http">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../usr/local/share/dotnet/sdk/7.0.313/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets">
+    <Files>
+      <File FileName="../../../../usr/local/share/dotnet/sdk/7.0.313/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" Line="151" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Auth" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Auth.IdentityServer PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Auth.AuthenticationService PreferredExecutionTarget="/Applications/Firefox.app" />
+</Properties>

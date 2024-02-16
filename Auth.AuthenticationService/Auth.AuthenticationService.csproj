@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <DockerfileContext>.</DockerfileContext>
+        <UserSecretsId>4553a6b9-4a60-4255-b732-93bdf1cc2706</UserSecretsId>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Duende.IdentityServer" Version="7.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.16" />
+        <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+        <PackageReference Include="NewRelic.Agent.Api" Version="10.10.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+        <PackageReference Include="RestSharp" Version="110.2.0" />
+        <PackageReference Include="Auth0.AspNetCore.Authentication" Version="1.4.0" />
+        <PackageReference Include="Auth0.AuthenticationApi" Version="7.25.1" />
+        <PackageReference Include="Auth0.ManagementApi" Version="7.25.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+        <PackageReference Include="log4net" Version="2.0.15" />
+        <PackageReference Include="dotenv.net" Version="3.1.3" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <None Remove="Services\" />
+        <None Remove="Models\" />
+        <None Remove="Middlewares\" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Middlewares\" />
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Auth.Models\Auth.Models.csproj" />
+    </ItemGroup>
+</Project>

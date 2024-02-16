@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  auth:
+    image: auth
+    build:
+      context: .
+      dockerfile: Auth.AuthService/Dockerfile
+    ports:
+      - 5000:5000
+      - 5001:5001
+  identity:
+    image: identity
+    build:
+      context: .
+      dockerfile: Auth.IdentityServer/Dockerfile
+    ports:
+      - 5006:5006
+      - 5007:5007
+  
+  
