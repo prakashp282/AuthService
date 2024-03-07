@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{514AC7EC-FDFA-4962-9D50-165617EC8095}|SelfHost">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DuendeIdentityServerwithIn-MemoryStoresandTestUsers1/Program.cs">
+    <Files>
+      <File FileName="DuendeIdentityServerwithIn-MemoryStoresandTestUsers1/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DuendeIdentityServerwithIn-MemoryStoresandTestUsers1">
+            <Node name="DuendeIdentityServerwithIn-MemoryStoresandTestUsers1" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.DuendeIdentityServerwithIn-MemoryStoresandTestUsers1 PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
